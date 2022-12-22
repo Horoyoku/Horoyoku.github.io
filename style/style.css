@@ -1,3 +1,11 @@
+/* Palette: {"Light Coral":"ff8284","Light Coral 2":"f29395","Pastel Pink":"e6a8ad","Blizzard Blue":"ace8e8","Celeste":"a6f7f7"} */
+
+@font-face {
+    font-family: Rodondo;
+    src: url(../resources/Rodondo.otf);
+}
+
 body {
-    background-color: rgb(89, 130, 12);
+    font: Rodondo, Verdana, Arial, sans-serif;
+    background-color: #ace8e8;
 }
