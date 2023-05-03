@@ -43,6 +43,7 @@ const Work = styled(motion.div)`
 `;
 const Project = styled(motion.div)`
   padding-bottom: 4vh;
+  margin: 0vh 20vh;
   .line {
     height: 0.5rem;
     background-color: #f67280;
@@ -50,7 +51,7 @@ const Project = styled(motion.div)`
   }
   img {
     width: 100%;
-    height: 50vh;
+    height: auto;
     object-fit: scale-down;
     @media only screen and (min-width: 821px) and (max-width: 1200px) {
       height: 30vh;
@@ -92,14 +93,12 @@ const OurWork = () => {
     <Work initial="hidden" animate="show" exit="exit">
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
-        
       </motion.div>
 
       <Project>
         <motion.h2 variants={fade}>Lunarpunk</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link className="non-styled-link" to="/project/lunarpunk">
-          {/* <Hide> */}
           <motion.img variants={photoAnimation} src={lunarpunk} alt="Lunarpunk" />
         </Link>
       </Project>

@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
         padding: 1rem 2rem;
         border: 3px solid #f67280;
         background: transparent;
-        color: white;
+        color: #f67280;
         transition: all 0.5s ease;
         font-family: 'Inter', sans-serif;
         &:hover {

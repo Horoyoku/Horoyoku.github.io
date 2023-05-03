@@ -37,6 +37,7 @@ code {
 }
 .non-styled-link:hover::after {
   transform: none;
+  color: #ffffff;
 }
 
 .menu-link {

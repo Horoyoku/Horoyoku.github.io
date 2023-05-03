@@ -7,14 +7,18 @@ import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 
+import YoutubeEmbed from "../components/YoutubeEmbed";
+
 const Details = styled(motion.div)`
   color: #4a1e2b;
 `;
 
 const Headline = styled.div`
   min-height: 90vh;
-  padding-top: 20vh;
+  padding-top: 25vh;
+  margin: 0vh auto;
   position: relative;
+  text-align: center;
   h2 {
     position: absolute;
     top: 10%;
@@ -33,9 +37,10 @@ const Headline = styled.div`
 `;
 
 const MainImage = styled.div`
+  margin: 0vh 30vh 0vh 30vh;
   img {
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     object-fit: scale-down;
     display: block;
     margin: 0 auto;
@@ -52,7 +57,7 @@ const MainImage = styled.div`
 
 const ProjectBody = styled.div`
   text-align: justify;
-  margin: 0rem 0rem 10rem 0rem;
+  margin: 5rem 15rem;
   p, ul {
     margin: 5px 10%;
   }
@@ -64,13 +69,9 @@ const ProjectBody = styled.div`
   }
   img {
     width: 25%;
-    height: 25%;
+    height: auto;
     display: block;
-    margin: 0 auto;
-  }
-  video{
-    display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 
   /* Kindel and iPad tablet  */
@@ -134,8 +135,8 @@ const ProjectDetail = () => {
             {(() => {
               if(project.video !== undefined){
                 return <>
-                  <p>En el siguiente enlace se puede ver un vídeo del juego:</p>
-                  <video src={project.video} width="750" height="500" controls></video>
+                  <p>A continuación se puede ver un vídeo del juego:</p>
+                  <YoutubeEmbed embedId={project.video}/>
                 </>
               }
             })()}
