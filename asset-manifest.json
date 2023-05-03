@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb2e21ef.chunk.css",
-    "main.js": "/static/js/main.80a591f2.chunk.js",
-    "main.js.map": "/static/js/main.80a591f2.chunk.js.map",
+    "main.css": "/static/css/main.a8399d43.chunk.css",
+    "main.js": "/static/js/main.b8500988.chunk.js",
+    "main.js.map": "/static/js/main.b8500988.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5d44abca.js",
     "runtime-main.js.map": "/static/js/runtime-main.5d44abca.js.map",
     "static/js/2.4f1ca684.chunk.js": "/static/js/2.4f1ca684.chunk.js",
@@ -10,12 +10,10 @@
     "static/js/3.31364e11.chunk.js": "/static/js/3.31364e11.chunk.js",
     "static/js/3.31364e11.chunk.js.map": "/static/js/3.31364e11.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.bb2e21ef.chunk.css.map": "/static/css/main.bb2e21ef.chunk.css.map",
+    "static/css/main.a8399d43.chunk.css.map": "/static/css/main.a8399d43.chunk.css.map",
     "static/js/2.4f1ca684.chunk.js.LICENSE.txt": "/static/js/2.4f1ca684.chunk.js.LICENSE.txt",
     "static/media/excaliroot.849ee10c.png": "/static/media/excaliroot.849ee10c.png",
-    "static/media/excaliroot.aa6fe07a.mp4": "/static/media/excaliroot.aa6fe07a.mp4",
     "static/media/home.aba1146f.svg": "/static/media/home.aba1146f.svg",
-    "static/media/lunarpunk.aa6fe07a.mp4": "/static/media/lunarpunk.aa6fe07a.mp4",
     "static/media/lunarpunkImage1.1018d61e.png": "/static/media/lunarpunkImage1.1018d61e.png",
     "static/media/lunarpunkLogo.e06bcc80.png": "/static/media/lunarpunkLogo.e06bcc80.png",
     "static/media/raccoon.2aa0f2ff.png": "/static/media/raccoon.2aa0f2ff.png",
@@ -24,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.5d44abca.js",
     "static/js/2.4f1ca684.chunk.js",
-    "static/css/main.bb2e21ef.chunk.css",
-    "static/js/main.80a591f2.chunk.js"
+    "static/css/main.a8399d43.chunk.css",
+    "static/js/main.b8500988.chunk.js"
   ]
 }
