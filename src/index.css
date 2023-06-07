@@ -13,7 +13,7 @@ code {
 
 /* ####### Custom scroll bar settings ####### */
 * {
-  scrollbar-width: thin !important;
+  scrollbar-width: none;
   scrollbar-color: rgba(155, 155, 155, 0.5) transparent !important;
 }
 *::-webkit-scrollbar {
