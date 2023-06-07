@@ -3,7 +3,8 @@ import { Route, Switch, useLocation } from "react-router-dom";
 import GlobalStyles from "./components/GlobalStyles";
 import Nav from "./components/Nav";
 // Import pages down here
-import AboutUs from "./pages/AboutMe";
+import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
 import ProjectDetail from "./pages/ProjectDetail";
 import MyProjects from "./pages/MyProjects";
 // Animation
@@ -22,7 +23,10 @@ function App() {
           key={location.pathname}
         >
           <Route path="/" exact>
-            <AboutUs />
+            <Home />
+          </Route>
+          <Route path="/AboutMe" exact>
+            <AboutMe />
           </Route>
           <Route path="/projects" exact>
             <MyProjects />

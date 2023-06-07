@@ -21,13 +21,13 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.1rem;
         cursor: pointer;
         padding: 1rem 2rem;
-        border: 3px solid #f67280;
+        border: 3px solid #7d7;
         background: transparent;
-        color: #f67280;
+        color: #7d7;
         transition: all 0.5s ease;
         font-family: 'Inter', sans-serif;
         &:hover {
-            background-color: #f67280;
+            background-color: #7d7;
             color: #fbffff;
         }
     }
@@ -36,20 +36,20 @@ const GlobalStyles = createGlobalStyle`
         font-size: 4rem;
     }
     h3 {
-        color: #4a1e2b;
+        color: #000000;
     }
     h4 {
         font-weight: 500;
-        color: #f67280;
+        color: #000000;
         font-size: 2rem;
     }
     span {
         font-weight: 500;
-        color: #f67280;
+        color: #7d7;
     }
     a {
         font-size: 1.1rem;
-        color: #4a1e2b;
+        color: #ffffff;
         text-decoration: none;
         display: flex;
         -webkit-box-align: center;
@@ -60,7 +60,7 @@ const GlobalStyles = createGlobalStyle`
         border: none;
         text-decoration: none !important;
         &::after {
-            background-color: #f67280;
+            background-color: #ffffff;
             position: absolute;
             bottom: -4px;
             left: 0;
@@ -96,14 +96,14 @@ const GlobalStyles = createGlobalStyle`
     }
     p {
         padding: 1rem 0rem;
-        color: #4a1e2b;
-        font-size: 1.4rem;
+        color: #000000;
+        font-size: 1rem;
         line-height: 150%;
     }
     li {
         padding: 0.5rem 0rem;
-        color: #4a1e2b;
-        font-size: 1.4rem;
+        color: #000000;
+        font-size: 1rem;
     }
     ul {
 

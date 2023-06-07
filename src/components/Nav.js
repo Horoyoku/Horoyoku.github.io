@@ -3,33 +3,29 @@ import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation, fade } from "../animation";
-
-import logo from "../img/raccoon.png"
-import home from "../img/home.svg"
-import projects from "../img/projects.png"
-
-const logoImg = styled.nav`
-  height: 20%;
-  width: 20%;
-`;
+import background from "../img/background.png"
 
 const Navbar = styled.nav`
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background: #c06c84;
+  background-image: url(${background});
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 5000;
   ul {
     display: flex;
+    margin: auto;
+    padding: 0rem;
+    align-items: center;
     list-style: none;
     li {
       padding-left: 2rem;
+      padding-right: 2rem;
       position: relative;
       color: #171F46;
     }
@@ -80,7 +76,7 @@ const NavbarMobile = styled.div`
 `;
 
 const Navmenu = styled(motion.div)`
-  background-color: #c06c84;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -97,30 +93,8 @@ const Navmenu = styled(motion.div)`
     li {
       padding-left: 1.6rem;
       position: relative;
-      color: #f67280;
+      color: #ffffff;
     }
-  }
-`;
-
-const Contact = styled(motion.div)`
-  padding: 1rem;
-  width: 100vw;
-  color: #c06c84;
-  background-color: #f67280;
-  h2 {
-    font-size: 50%;
-    margin: 0;
-  }
-  p {
-    color: #c06c84;
-    margin: 0;
-    padding: 0;
-  }
-  button {
-    border: none;
-    margin: 2rem 0;
-    background-color: #c06c84;
-    /* padding-left: 0; */
   }
 `;
 
@@ -132,20 +106,29 @@ const Nav = () => {
   return (
     <>
       <Navbar>
+        
+        {/*
         <h1>
           <NavLink id="logo" to="/">
             <img src={logo}/>
           </NavLink>
         </h1>
+        */}
+        
         <ul>
           <li>
             <NavLink className="styled-link" to="/">
-              About me
+              Home
             </NavLink>
           </li>
           <li>
             <NavLink className="styled-link" to="/projects">
               My Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="styled-link" to="/AboutMe">
+              About Me
             </NavLink>
           </li>
         </ul>
@@ -182,7 +165,6 @@ const Nav = () => {
                   color: isClicked && path === "/" ? "#f67280" : "#eee",
                 })}
               >
-                <img src={home}/>
               </NavLink>
             </li>
             <li>
@@ -194,7 +176,6 @@ const Nav = () => {
                   color: isClicked && path === "/projects" ? "#f67280" : "#eee",
                 })}
               >
-                <img src={projects}/>
               </NavLink>
             </li>
           </ul>

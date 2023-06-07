@@ -13,21 +13,24 @@ const Details = styled(motion.div)`
   color: #4a1e2b;
 `;
 
+const Project = styled.div`
+  margin: auto;
+  width: 50%;
+  overflow: hidden;
+  padding: 5rem 10rem;
+`
+
 const Headline = styled.div`
-  min-height: 90vh;
-  padding-top: 25vh;
-  margin: 0vh auto;
+  margin: 0vh auto 5vh auto;
   position: relative;
   text-align: center;
   h2 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
+    margin-bottom: 3rem;
+    font-weight: 300;
+    color: #000000
   }
   img {
     width: 100%;
-    height: 70vh;
     object-fit: cover;
   }
   /* Kindel and iPad tablet  */
@@ -37,7 +40,6 @@ const Headline = styled.div`
 `;
 
 const MainImage = styled.div`
-  margin: 0vh 30vh 0vh 30vh;
   img {
     width: 100%;
     height: auto;
@@ -57,19 +59,16 @@ const MainImage = styled.div`
 
 const ProjectBody = styled.div`
   text-align: justify;
-  margin: 5rem 15rem;
-  p, ul {
-    margin: 5px 10%;
-  }
+  font-weight: 300;
   h3 {
     text-align: center;
     margin: 0px auto;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 300;
   }
   img {
-    width: 25%;
-    height: auto;
+    width: auto;
+    max-height: 25rem;
     display: block;
     margin: 2rem auto;
   }
@@ -104,7 +103,7 @@ const ProjectDetail = () => {
       exit="exit"
     >
       {project ? (
-        <div>
+        <Project>
           <Headline>
             <h2>{project.title}</h2>
             <MainImage>
@@ -112,7 +111,7 @@ const ProjectDetail = () => {
             </MainImage>
           </Headline>
           <ProjectBody>
-            <h3>Sobre el proyecto</h3>
+            <h3>About the project</h3>
             {(() => {
               if(project.description !== undefined)
               {
@@ -135,7 +134,6 @@ const ProjectDetail = () => {
             {(() => {
               if(project.video !== undefined){
                 return <>
-                  <p>A continuación se puede ver un vídeo del juego:</p>
                   <YoutubeEmbed embedId={project.video}/>
                 </>
               }
@@ -144,7 +142,7 @@ const ProjectDetail = () => {
             {(() => {
               if(project.contributions !== undefined){
                 return <>
-                  <p>En este juego, me encargué principalmente de:</p>
+                  <p>Some of the things I worked on for this project are:</p>
                     <ul>
                       { project.contributions.map((item) => {
                         return <li>{item}</li>;
@@ -154,7 +152,7 @@ const ProjectDetail = () => {
               }
             })()}
           </ProjectBody>
-        </div>
+        </Project>
       ) : (
         <h3>Sorry, the project you are looking is not available</h3>
       )}
