@@ -52,8 +52,11 @@ a::hover {
 a::after {
   all: initial;
 }
-a img {
+
+ul li {
+  padding: 3px; 
 }
+
 /* Kindel and iPad tablet  */
 @media only screen and (min-width: 540px) and (max-width: 820px) {
   display: flex;
