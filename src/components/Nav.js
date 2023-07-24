@@ -9,7 +9,7 @@ const Navbar = styled.nav`
   min-height: 5vh;
   display: flex;
   margin: auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 10rem;
   background-image: url(${background});
@@ -17,19 +17,63 @@ const Navbar = styled.nav`
   position: sticky;
   top: 0px;
   z-index: 5000;
-  ul {
-    display: flex;
-    margin: auto;
-    padding: 0rem;
-    align-items: center;
-    list-style: none;
-    li {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      position: relative;
-      color: #171F46;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #dcdc39;
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  .nav, ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .nav {
+      position: relative;
+      background-color: #fff;
+      padding: 10px;
+      transition: 0.5s;
+      border-radius: 50px;
+      box-shadow: 0 8px 15px rgba(0,0,0,.2);
+  }
+
+  ul {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      transition: 0.5s;
+  }
+
+  ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 5px;
+      padding 0px;
+  }
+
+  ul li a {
+      text-decoration: none;
+      color: #7d7d7d;
+      text-transform: uppercase;
+      font-weight: 450;
+      transition: 0.5s;
+      padding: 10px;
+      border-radius: 25px;
+  }
+
+  ul li a:hover {
+      color: #24b124;
+      font-weight: 600;
+  }
+
+  ul li a.active {
+      color: #ffffff;
+      background-image: linear-gradient(135deg, #5dd167 40%, #1787ff);
+      font-weight: 600;
+}
+
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
     padding: 2rem;
@@ -58,7 +102,7 @@ const NavbarMobile = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 2rem 1rem;
-    background: #c06c84;
+    background-image: url(${background});
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
@@ -115,31 +159,28 @@ const Nav = () => {
         </h1>
         */}
         
-        <ul>
-          <li>
-            <NavLink className="styled-link" to="/">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="styled-link" to="/projects">
-              My Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="styled-link" to="/AboutMe">
-              About Me
-            </NavLink>
-          </li>
-        </ul>
+        <div class="nav">
+          <ul>
+            <li>
+              <NavLink className="styled-link" to="/" exact>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="styled-link" to="/projects">
+                My Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="styled-link" to="/AboutMe">
+                About Me
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </Navbar>
       {/* Mobile responsive sidebar opens up on mobile devices */}
       <NavbarMobile>
-        <h1>
-          <NavLink id="logo" to="/">
-            Capture
-          </NavLink>
-        </h1>
         <div className="box" onClick={() => setIsClicked(!isClicked)}>
           <div className={`btn ${isClicked ? "active" : "not-active"}`}>
             <span className="span"></span>

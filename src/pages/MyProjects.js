@@ -63,31 +63,32 @@ const Grid = styled(motion.div)`
 `;
 
 const Project = styled(motion.div)`
-  padding-bottom: 4vh;
+  padding: 30px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   height: 25rem;
   justify-self: center;
   display: flex;
+  border-radius: 30px;
+  background-color: #d6f1d6;
 	flex-direction: column;
   h2 {
     padding: 1rem 0;
-    font-weight: 300;
+    font-weight: 450;
+    font-size: 45px;
+    color: black;
   }
   .line {
     height: 0.5rem;
     background-color: #f67280;
     margin-bottom: 3rem;
   }
-  
-  a {
-    margin: auto;
-    flex: 1;
-  }
 
-  a div {
+  div {
     width: 100%;
     height: 100%;
     text-align: center;
     background-color: black;
+    border-radius: 30px;
     display: flex;
     align-contents: center;
   }
@@ -127,23 +128,25 @@ const OurWork = () => {
     exit="exit"
     >
       <Grid>
+        
+      <Link className="non-styled-link" to="/project/lunarpunk">
         <Project>
-          <motion.h2 variants={fade}>Lunarpunk</motion.h2>
-          <Link className="non-styled-link" to="/project/lunarpunk">
             <div>
               <motion.img variants={photoAnimation} src={lunarpunk} alt="Lunarpunk" />
             </div>
-          </Link>
+          <motion.h2 variants={fade}>Lunarpunk</motion.h2>
         </Project>
+        </Link>
 
+      <Link className="non-styled-link" to="/project/excaliroot">
         <Project>
-          <motion.h2 variants={fade}>Excaliroot</motion.h2>
-            <Link className="non-styled-link" to="/project/excaliroot">
               <div>
               <motion.img variants={photoAnimation} src={excaliroot} alt="Excaliroot" />
               </div>
-            </Link>
+          <motion.h2 variants={fade}>Excaliroot</motion.h2>
         </Project>
+        </Link>
+
       </Grid>
     </Work>
   );

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { titleAnimation, fade, photoAnimation } from "../animation";
 import Wave from "./Wave";
 
-const Header = styled(motion.div)`
+const Header = styled.div`
   @media only screen and (min-width: 540px) and (max-width: 820px) {
     h2 {
       font-size: 3rem;
@@ -34,27 +34,19 @@ const Introduction = () => {
   return (
     <Layout>
       <Description style={{ zIndex: 2 }}>
-        <Header
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="title"
-        >
-          <Hide>
-            <motion.h2 variants={titleAnimation}>
-              Hi! My name is
-              <h2><span>Carmen</span></h2>
-            </motion.h2>
-          </Hide>
-
+        <Header>
+        <h2>
+          Hi! My name is <br/>
+          <span>Carmen</span>
+        </h2>
         </Header>
 
-        <motion.p variants={fade}>
+        <p>
           Game developer
-        </motion.p>
+        </p>
 
         <Link className="non-styled-link" to="/projects">
-          <motion.button variants={fade}>My Projects</motion.button>
+          <button variants={fade}>My Projects</button>
         </Link>
       </Description>
       <ImageContainer>

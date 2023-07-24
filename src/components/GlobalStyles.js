@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     }
     body {
         background: #fbffff;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         overflow-x: hidden;
     }
     button {
@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
         background: transparent;
         color: #7d7;
         transition: all 0.5s ease;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         &:hover {
             background-color: #7d7;
             color: #fbffff;
@@ -85,7 +85,7 @@ const GlobalStyles = createGlobalStyle`
         color: #f8b195;
         text-decoration: none !important;
         text-decoration: none;
-        font-family: "Lobster", cursive;
+        font-family: "Roboto", cursive;
         font-weight: lighter;
         &::after {
             background-color: transparent;

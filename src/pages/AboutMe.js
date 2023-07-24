@@ -8,22 +8,24 @@ import linkedin from "../img/linkedin.png";
 
 const Content = styled(motion.div)`
   margin: auto;
-  width: 50%;
-  overflow: hidden;
-  padding: 5rem 10rem;
+  width: 30%;
+  padding: 5rem 0rem;
 
   font-weight: 300;
   
   @media only screen and (min-width: 821px) and (max-width: 1200px) {
     padding: 3rem 5rem;
+    width: 100%;
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
     padding: 3rem 2.5rem;
+    width: 100%;
   }
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     padding: 2.5rem 1rem;
+    width: 100%;
     h2 {
       font-size: 3rem;
       text-align: center;
@@ -102,7 +104,7 @@ const AboutMe = () => {
       </Paragraph>
       <Paragraph>
         As I got older, I got interested in computer science, so I decided to study this subject in the University of Santiago de Compostela.
-        Combining two of the things that I was most interested in, I chose to apply for the Master's Degree of Game Developement of the Complutense University of Madrid.
+        Combining two of the things that I was most interested in, I chose to apply for the Master's Degree of Game Development of the Complutense University of Madrid.
       </Paragraph>
       <Paragraph>
         Some of my favorite games include:

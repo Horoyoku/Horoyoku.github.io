@@ -17,7 +17,7 @@ const Project = styled.div`
   margin: auto;
   width: 50%;
   overflow: hidden;
-  padding: 5rem 10rem;
+  padding: 3rem 0rem;
 `
 
 const Headline = styled.div`
