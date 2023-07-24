@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation, fade } from "../animation";
 import background from "../img/background.png"
 
+import { ReactComponent as Home } from "../img/home-1-svgrepo-com.svg"
+import { ReactComponent as Projects } from "../img/gameboy-svgrepo-com.svg"
+import { ReactComponent as AboutMe } from "../img/user-id-svgrepo-com.svg"
+
 const Navbar = styled.nav`
   min-height: 5vh;
   display: flex;
@@ -25,54 +29,54 @@ const Navbar = styled.nav`
   }
 
   .nav, ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav {
-      position: relative;
-      background-color: #fff;
-      padding: 10px;
-      transition: 0.5s;
-      border-radius: 50px;
-      box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
   }
 
   ul {
-      margin: 0;
-      padding: 0;
-      width: 400px;
-      transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    transition: 0.5s;
   }
 
   ul li {
-      list-style: none;
-      display: inline-block;
-      margin: 0 5px;
-      padding 0px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    padding 0px;
   }
 
   ul li a {
-      text-decoration: none;
-      color: #7d7d7d;
-      text-transform: uppercase;
-      font-weight: 450;
-      transition: 0.5s;
-      padding: 10px;
-      border-radius: 25px;
+    text-decoration: none;
+    color: #7d7d7d;
+    text-transform: uppercase;
+    font-weight: 450;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 25px;
   }
 
   ul li a:hover {
-      color: #24b124;
-      font-weight: 600;
+    color: #24b124;
+    font-weight: 600;
   }
 
   ul li a.active {
-      color: #ffffff;
-      background-image: linear-gradient(135deg, #5dd167 40%, #1787ff);
-      font-weight: 600;
-}
+    color: #ffffff;
+    background-image: linear-gradient(135deg, #5dd167 40%, #1787ff);
+    font-weight: 600;
+  }
 
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
@@ -99,66 +103,64 @@ const NavbarMobile = styled.div`
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     display: flex;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 1rem;
     background-image: url(${background});
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    z-index: 5000;
-    h1 {
-      font-size: 0.5rem;
-    }
-    ul {
-      li {
-        font-size: 0.5em;
-        display: none;
-      }
-    }
-  }
-`;
+    z-index: 1;
+    padding: 20px;
 
-const Navmenu = styled(motion.div)`
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  height: 100%;
-  width: 100vw;
-  overflow: hidden;
-  position: fixed;
-  z-index: 5001;
-  font-size: 5rem;
-  transition: 0.5s ease-in-out;
-  ul {
-    list-style: none;
-    li {
-      padding-left: 1.6rem;
-      position: relative;
-      color: #ffffff;
+    .separator{
+      height: 100px;
+      display: block;
     }
+
+    .nav {
+      position: relative;
+      background-color: #fff;
+      transition: 0.5s;
+      border-radius: 30px;
+      margin: auto;
+      box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      transition: 0.5s;
+      display: flex;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 5px;
+      padding 0px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #7d7d7d;
+      text-transform: uppercase;
+      font-weight: 450;
+      transition: 0.5s;
+      padding: 10px;
+      border-radius: 25px;
+    }
+    
   }
 `;
 
 const Nav = () => {
-  const [isClicked, setIsClicked] = useState(false);
   const location = useLocation();
   const path = location.pathname;
 
   return (
     <>
       <Navbar>
-        
-        {/*
-        <h1>
-          <NavLink id="logo" to="/">
-            <img src={logo}/>
-          </NavLink>
-        </h1>
-        */}
-        
         <div class="nav">
           <ul>
             <li>
@@ -181,49 +183,27 @@ const Nav = () => {
       </Navbar>
       {/* Mobile responsive sidebar opens up on mobile devices */}
       <NavbarMobile>
-        <div className="box" onClick={() => setIsClicked(!isClicked)}>
-          <div className={`btn ${isClicked ? "active" : "not-active"}`}>
-            <span className="span"></span>
-            <span className="span"></span>
-            <span className="span"></span>
-          </div>
-        </div>
-      </NavbarMobile>
-      {isClicked ? (
-        <Navmenu
-          variants={pageAnimation}
-          initial="hidden"
-          animate="show"
-          exit="exit"
-        >
+        <div class="separator"/>
+        <div class="nav">
           <ul>
             <li>
-              <NavLink
-                className="menu-link"
-                to="/"
-                onClick={() => setIsClicked(!isClicked)}
-                style={(isClicked) => ({
-                  color: isClicked && path === "/" ? "#f67280" : "#eee",
-                })}
-              >
+              <NavLink className="styled-link" to="/" exact>
+              <Home stroke="#24B3A8"/>
               </NavLink>
             </li>
             <li>
-              <NavLink
-                className="menu-link"
-                to="/projects"
-                onClick={() => setIsClicked(!isClicked)}
-                style={(isClicked) => ({
-                  color: isClicked && path === "/projects" ? "#f67280" : "#eee",
-                })}
-              >
+              <NavLink className="styled-link" to="/projects">
+              <Projects stroke="#24B3A8" current="#24B3A8"/>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="styled-link" to="/AboutMe">
+              <AboutMe stroke="#24B3A8"/>
               </NavLink>
             </li>
           </ul>
-        </Navmenu>
-      ) : (
-        ""
-      )}
+        </div>
+      </NavbarMobile>
     </>
   );
 };

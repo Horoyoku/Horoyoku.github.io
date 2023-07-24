@@ -18,6 +18,18 @@ const Project = styled.div`
   width: 50%;
   overflow: hidden;
   padding: 3rem 0rem;
+
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    padding: 3rem;
+    width: 100%;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    padding: 3rem;
+    padding-top: 30px;
+    width: 100%;
+  }
+
 `
 
 const Headline = styled.div`
@@ -33,10 +45,6 @@ const Headline = styled.div`
     width: 100%;
     object-fit: cover;
   }
-  /* Kindel and iPad tablet  */
-  @media only screen and (min-width: 540px) and (max-width: 820px) {
-    min-height: fit-content;
-  }
 `;
 
 const MainImage = styled.div`
@@ -46,14 +54,6 @@ const MainImage = styled.div`
     object-fit: scale-down;
     display: block;
     margin: 0 auto;
-  }
-  /* Kindel and iPad tablet  */
-  @media only screen and (min-width: 540px) and (max-width: 820px) {
-    min-height: fit-content;
-    img {
-      min-height: 10vh;
-      height: 40vh;
-    }
   }
 `;
 

@@ -35,7 +35,7 @@ export const Description = styled.div`
     color: #000000;
   }
   p {
-    color: #4a1e2b;
+    color: #000000;
     font-size: 20px;
   }
   /* Kindel and iPad tablet  */

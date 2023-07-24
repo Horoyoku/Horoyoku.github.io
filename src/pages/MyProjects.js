@@ -9,8 +9,6 @@ import { motion } from "framer-motion";
 import {
   photoAnimation,
   fade,
-  slider,
-  sliderContainer,
 } from "../animation";
 
 const Work = styled(motion.div)`
@@ -27,7 +25,7 @@ const Work = styled(motion.div)`
   }
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
-    padding: 2.5rem 1rem;
+    padding: 0rem 0rem;
     h2 {
       font-size: 3rem;
       text-align: center;
@@ -50,11 +48,17 @@ const Grid = styled(motion.div)`
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
+    width: 100%;
     padding: 3rem 2.5rem;
+    grid-template-columns: 100%;
+    row-gap: 50px;
   }
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
+    width: 100%;
     padding: 2.5rem 1rem;
+    grid-template-columns: 100%;
+    row-gap: 50px;
     h2 {
       font-size: 3rem;
       text-align: center;
@@ -98,16 +102,19 @@ const Project = styled(motion.div)`
     height: auto;
     object-fit: scale-down;
     @media only screen and (min-width: 821px) and (max-width: 1200px) {
-      height: 30vh;
+      width: 100%;
+      height: auto;
     }
     /* Kindel and iPad tablet  */
     @media only screen and (min-width: 540px) and (max-width: 820px) {
-      height: 50vh;
+      width: 100%;
+      height: auto;
     }
     /* Mobile devices iPhone, Pixel */
     @media only screen and (min-width: 320px) and (max-width: 539px) {
-      object-fit: cover;
-      height: 70vh;
+      
+      width: 100%;
+      height: auto;
     }
   }
   /* Mobile devices iPhone, Pixel */
