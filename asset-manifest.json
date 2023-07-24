@@ -1,27 +1,30 @@
 {
   "files": {
     "main.css": "/static/css/main.10fdb71a.chunk.css",
-    "main.js": "/static/js/main.220469ce.chunk.js",
-    "main.js.map": "/static/js/main.220469ce.chunk.js.map",
+    "main.js": "/static/js/main.0e5d66d9.chunk.js",
+    "main.js.map": "/static/js/main.0e5d66d9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.068352d7.js",
     "runtime-main.js.map": "/static/js/runtime-main.068352d7.js.map",
-    "static/js/2.7fa5ea45.chunk.js": "/static/js/2.7fa5ea45.chunk.js",
-    "static/js/2.7fa5ea45.chunk.js.map": "/static/js/2.7fa5ea45.chunk.js.map",
+    "static/js/2.fc2313da.chunk.js": "/static/js/2.fc2313da.chunk.js",
+    "static/js/2.fc2313da.chunk.js.map": "/static/js/2.fc2313da.chunk.js.map",
     "static/js/3.167f2edc.chunk.js": "/static/js/3.167f2edc.chunk.js",
     "static/js/3.167f2edc.chunk.js.map": "/static/js/3.167f2edc.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.10fdb71a.chunk.css.map": "/static/css/main.10fdb71a.chunk.css.map",
-    "static/js/2.7fa5ea45.chunk.js.LICENSE.txt": "/static/js/2.7fa5ea45.chunk.js.LICENSE.txt",
+    "static/js/2.fc2313da.chunk.js.LICENSE.txt": "/static/js/2.fc2313da.chunk.js.LICENSE.txt",
     "static/media/background.f573f9fb.png": "/static/media/background.f573f9fb.png",
     "static/media/excaliroot.849ee10c.png": "/static/media/excaliroot.849ee10c.png",
+    "static/media/gameboy-svgrepo-com.39f1ca79.svg": "/static/media/gameboy-svgrepo-com.39f1ca79.svg",
+    "static/media/home-1-svgrepo-com.e3b2298d.svg": "/static/media/home-1-svgrepo-com.e3b2298d.svg",
     "static/media/icon.77d766b3.png": "/static/media/icon.77d766b3.png",
     "static/media/lunarpunkImage1.1018d61e.png": "/static/media/lunarpunkImage1.1018d61e.png",
-    "static/media/lunarpunkLogo.e06bcc80.png": "/static/media/lunarpunkLogo.e06bcc80.png"
+    "static/media/lunarpunkLogo.e06bcc80.png": "/static/media/lunarpunkLogo.e06bcc80.png",
+    "static/media/user-id-svgrepo-com.d0eddb5c.svg": "/static/media/user-id-svgrepo-com.d0eddb5c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.068352d7.js",
-    "static/js/2.7fa5ea45.chunk.js",
+    "static/js/2.fc2313da.chunk.js",
     "static/css/main.10fdb71a.chunk.css",
-    "static/js/main.220469ce.chunk.js"
+    "static/js/main.0e5d66d9.chunk.js"
   ]
 }
