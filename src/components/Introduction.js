@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import icon from "../img/icon.png";
+import photo from "../img/photo.jpg";
 import { Link } from "react-router-dom";
 import { Layout, Description, ImageContainer, Hide } from "../styles";
 // Animation
 import { motion } from "framer-motion";
 import { titleAnimation, fade, photoAnimation } from "../animation";
 import Wave from "./Wave";
+import '../css/Circles.css';
 
 const Header = styled.div`
   @media only screen and (min-width: 540px) and (max-width: 820px) {
@@ -15,6 +16,7 @@ const Header = styled.div`
     }
   }
 `;
+
 
 const Introduction = () => {
   // Framer-motion variant
@@ -32,6 +34,7 @@ const Introduction = () => {
   };
 
   return (
+    <>
     <Layout>
       <Description style={{ zIndex: 2 }}>
         <Header>
@@ -54,12 +57,27 @@ const Introduction = () => {
           variants={photoAnimation}
           initial="hidden"
           animate="show"
-          src={icon}
+          src={photo}
           alt="mainImage"
         />
       </ImageContainer>
-      <Wave />
     </Layout>
+
+    <div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+    </div >
+    </>
   );
 };
 

@@ -16,14 +16,12 @@ export const Layout = styled(motion.div)`
   @media only screen and (min-width: 540px) and (max-width: 820px) {
     padding: 3rem;
     flex-direction: column;
-    justify-content: center;
   }
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     padding: 1rem;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 `;
@@ -47,7 +45,6 @@ export const Description = styled.div`
     padding-right: 1rem;
     p {
       padding: 2rem;
-      text-align: center;
     }
   }
   /* Mobile devices iPhone, Pixel */
@@ -55,11 +52,9 @@ export const Description = styled.div`
     padding: 0;
     h2 {
       font-size: 2.5rem;
-      text-align: center;
     }
     p {
       font-size: 1rem;
-      text-align: center;
     }
     button {
       margin: 0 auto;
@@ -73,8 +68,7 @@ export const ImageContainer = styled.div`
   img {
     width: 100%;
     object-fit: cover;
-    -webkit-user-drag: none;
-    margin-top: 1rem;
+    border-radius: 100px 0px;
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {

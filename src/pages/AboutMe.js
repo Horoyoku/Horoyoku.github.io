@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
-import linkedin from "../img/linkedin.png";
+import linkedin from "../img/linkedin.svg";
 
 const Content = styled(motion.div)`
   margin: auto;
@@ -28,7 +28,6 @@ const Content = styled(motion.div)`
     width: 100%;
     h2 {
       font-size: 3rem;
-      text-align: center;
     }
   }
 `;
@@ -64,11 +63,9 @@ ul li {
   display: flex;
   flex-direction: column;
   flex: 0;
-  align-items: center;
   padding-right: 1rem;
   p {
     padding: 2rem;
-    text-align: center;
   }
 }
 /* Mobile devices iPhone, Pixel */
@@ -76,15 +73,19 @@ ul li {
   padding: 0;
   h2 {
     font-size: 2.5rem;
-    text-align: center;
   }
   p {
     font-size: 1rem;
-    text-align: center;
   }
   button {
     margin: 0 auto;
   }
+}
+`;
+
+const Icon = styled.img`  
+{
+  height: 50px;
 }
 `;
 
@@ -99,7 +100,7 @@ const AboutMe = () => {
         Hi!
       </Paragraph>
       <Paragraph>
-        My name is Carmen, and I'm a computer engineer wanting to enter the world of game development. 
+        My name is Carmen, and I'm a computer engineer in the world of game development. 
         I grew up playing games on the DS, PS2 and Wii.
       </Paragraph>
       <Paragraph>
@@ -127,7 +128,7 @@ const AboutMe = () => {
         If you are interested in my profile, and want to contact me about anything, consider reaching out to me!
       </Paragraph>
       <Paragraph>
-        <a href="https://www.linkedin.com/in/carmen-ocalou/"><img src={linkedin}/></a>
+        <a href="https://www.linkedin.com/in/carmen-ocalou/"><Icon src={linkedin}/></a>
       </Paragraph>  
     </Content>
   );

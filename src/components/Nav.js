@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import { pageAnimation, titleAnimation, fade } from "../animation";
 import background from "../img/background.png"
 
 import { ReactComponent as Home } from "../img/home-1-svgrepo-com.svg"
@@ -39,7 +37,7 @@ const Navbar = styled.nav`
     background-color: #fff;
     padding: 10px;
     transition: 0.5s;
-    border-radius: 50px;
+    border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0,0,0,.2);
   }
 
@@ -64,18 +62,16 @@ const Navbar = styled.nav`
     font-weight: 450;
     transition: 0.5s;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 10px;
   }
 
   ul li a:hover {
-    color: #24b124;
-    font-weight: 600;
+    color: #65a268;
   }
 
   ul li a.active {
     color: #ffffff;
-    background-image: linear-gradient(135deg, #5dd167 40%, #1787ff);
-    font-weight: 600;
+    background-image: linear-gradient(135deg, #65a268 40%, #65a268);
   }
 
   /* Kindel and iPad tablet  */
@@ -100,6 +96,7 @@ const Navbar = styled.nav`
 
 const NavbarMobile = styled.div`
   display: none;
+  
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     display: flex;
@@ -110,8 +107,9 @@ const NavbarMobile = styled.div`
     align-items: center;
     justify-content: space-between;
     background-image: url(${background});
-    z-index: 1;
+    
     padding: 20px;
+    z-index: 3;
 
     .separator{
       height: 100px;

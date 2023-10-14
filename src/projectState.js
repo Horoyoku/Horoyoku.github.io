@@ -1,6 +1,6 @@
 
 import lunarpunkMain from "./img/lunarpunkLogo.png"
-import lunarpunkSecondary from "./img/lunarpunkImage1.png"
+import lunarpunkSecondary from "./img/lunarpunk.png"
 
 import excalirootMain from "./img/excaliroot.png"
 

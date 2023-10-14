@@ -2,14 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import lunarpunk from "../img/lunarpunkLogo.png"
-import excaliroot from "../img/excaliroot.png"
+import lunarpunk from "../img/lunarpunk_11.png"
+import excaliroot from "../img/excaliroot_11.png"
+import bluey from "../img/Bluey_11.jpg"
 // Animations
 import { motion } from "framer-motion";
 import {
   photoAnimation,
   fade,
 } from "../animation";
+
+import "../css/TimelineProjects.css";
 
 const Work = styled(motion.div)`
   overflow: hidden;
@@ -33,99 +36,6 @@ const Work = styled(motion.div)`
   }
 `;
 
-const Grid = styled(motion.div)`
-  margin: auto;
-  width: 60%;
-
-  display: grid;
-  column-gap: 10%;
-  grid-template-columns: 45% 45%;
-  grid-template-rows: auto;
-  text-align: center;
-  
-  @media only screen and (min-width: 821px) and (max-width: 1200px) {
-    padding: 3rem 5rem;
-  }
-  /* Kindel and iPad tablet  */
-  @media only screen and (min-width: 540px) and (max-width: 820px) {
-    width: 100%;
-    padding: 3rem 2.5rem;
-    grid-template-columns: 100%;
-    row-gap: 50px;
-  }
-  /* Mobile devices iPhone, Pixel */
-  @media only screen and (min-width: 320px) and (max-width: 539px) {
-    width: 100%;
-    padding: 2.5rem 1rem;
-    grid-template-columns: 100%;
-    row-gap: 50px;
-    h2 {
-      font-size: 3rem;
-      text-align: center;
-    }
-  }
-`;
-
-const Project = styled(motion.div)`
-  padding: 30px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  height: 25rem;
-  justify-self: center;
-  display: flex;
-  border-radius: 30px;
-  background-color: #d6f1d6;
-	flex-direction: column;
-  h2 {
-    padding: 1rem 0;
-    font-weight: 450;
-    font-size: 45px;
-    color: black;
-  }
-  .line {
-    height: 0.5rem;
-    background-color: #f67280;
-    margin-bottom: 3rem;
-  }
-
-  div {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: black;
-    border-radius: 30px;
-    display: flex;
-    align-contents: center;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: scale-down;
-    @media only screen and (min-width: 821px) and (max-width: 1200px) {
-      width: 100%;
-      height: auto;
-    }
-    /* Kindel and iPad tablet  */
-    @media only screen and (min-width: 540px) and (max-width: 820px) {
-      width: 100%;
-      height: auto;
-    }
-    /* Mobile devices iPhone, Pixel */
-    @media only screen and (min-width: 320px) and (max-width: 539px) {
-      
-      width: 100%;
-      height: auto;
-    }
-  }
-  /* Mobile devices iPhone, Pixel */
-  @media only screen and (min-width: 320px) and (max-width: 539px) {
-    margin-bottom: 0;
-    .line {
-      margin-bottom: 1rem;
-    }
-  }
-`;
-
 const OurWork = () => {
 
   return (
@@ -134,27 +44,58 @@ const OurWork = () => {
     animate="show" 
     exit="exit"
     >
-      <Grid>
+
+    <section class="design-section">
+      <div class="timeline">
+
+        <div class="timeline-component timeline-image">
+          <img src={bluey} alt="Bluey"/>
+        </div>
+
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+        </div>
         
-      <Link className="non-styled-link" to="/project/lunarpunk">
-        <Project>
-            <div>
-              <motion.img variants={photoAnimation} src={lunarpunk} alt="Lunarpunk" />
-            </div>
-          <motion.h2 variants={fade}>Lunarpunk</motion.h2>
-        </Project>
-        </Link>
+        <div class="timeline-component timeline-content">
+          
+          <h3>Bluey: The Videogame</h3>
+          <p>Videogame based on the hit TV series.</p>
+        </div>
 
-      <Link className="non-styled-link" to="/project/excaliroot">
-        <Project>
-              <div>
-              <motion.img variants={photoAnimation} src={excaliroot} alt="Excaliroot" />
-              </div>
-          <motion.h2 variants={fade}>Excaliroot</motion.h2>
-        </Project>
-        </Link>
+        <div class="timeline-component timeline-content">
+          <h3>Lunarpunk</h3>
+          <p>Developed as Master's degree final project.</p>
+          <Link className="non-styled-link" to="/project/lunarpunk">
+            <button class="button-project">See more</button>
+          </Link>
+        </div>
 
-      </Grid>
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+        </div>
+
+        <div class="timeline-component timeline-image">
+        <img src={lunarpunk} alt="Lunarpunk"/>
+        </div>
+
+        <div class="timeline-component timeline-image">
+          <img src={excaliroot} alt="Excaliroot"/>
+        </div>
+
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+
+        <div class="timeline-component timeline-content">
+          <h3>Excaliroot</h3>
+          <p>Developed for the Global Game Jam of 2023.</p>
+          <Link className="non-styled-link" to="/project/excaliroot">
+            <button class="button-project">See more</button>
+          </Link>
+        </div>
+      </div>
+    </section>
+
     </Work>
   );
 };

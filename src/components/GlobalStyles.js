@@ -21,13 +21,14 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.1rem;
         cursor: pointer;
         padding: 1rem 2rem;
-        border: 3px solid #7d7;
+        border: 3px solid #65a268;
+        border-radius: 10px;
         background: transparent;
-        color: #7d7;
+        color: #65a268;
         transition: all 0.5s ease;
         font-family: 'Roboto', sans-serif;
         &:hover {
-            background-color: #7d7;
+            background-color: #65a268;
             color: #fbffff;
         }
     }
@@ -45,15 +46,13 @@ const GlobalStyles = createGlobalStyle`
     }
     span {
         font-weight: 500;
-        color: #7d7;
+        color: #65a268;
     }
     a {
         font-size: 1.1rem;
         color: #ffffff;
         text-decoration: none;
         display: flex;
-        -webkit-box-align: center;
-        align-items: center;
         padding: 0;
         position: relative;
         white-space: nowrap;
