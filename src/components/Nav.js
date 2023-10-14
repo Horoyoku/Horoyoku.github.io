@@ -3,9 +3,9 @@ import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import background from "../img/background.png"
 
-import { ReactComponent as Home } from "../img/home-1-svgrepo-com.svg"
-import { ReactComponent as Projects } from "../img/gameboy-svgrepo-com.svg"
-import { ReactComponent as AboutMe } from "../img/user-id-svgrepo-com.svg"
+import { ReactComponent as Home } from "../img/home.svg"
+import { ReactComponent as Projects } from "../img/gameboy.svg"
+import { ReactComponent as AboutMe } from "../img/user-id.svg"
 
 const Navbar = styled.nav`
   min-height: 5vh;

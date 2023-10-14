@@ -3,10 +3,14 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const VideoResponsive = styled.div`
-    iframe{
-      width: 100%;
-      aspect-ratio: 16 / 9;
-    }
+  width: 100%;
+  padding-top: 15px;
+  iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #787979;
+  }
 `;
   
 

@@ -5,11 +5,15 @@ import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
 import linkedin from "../img/linkedin.svg";
+import github from "../img/github.svg";
+import cv from "../img/cv.svg";
+import cvDocument from "../documents/cv.pdf";
 
 const Content = styled(motion.div)`
   margin: auto;
   width: 30%;
   padding: 5rem 0rem;
+  padding-bottom: 1rem;
 
   font-weight: 300;
   
@@ -86,6 +90,7 @@ ul li {
 const Icon = styled.img`  
 {
   height: 50px;
+  margin: 5px;
 }
 `;
 
@@ -129,6 +134,8 @@ const AboutMe = () => {
       </Paragraph>
       <Paragraph>
         <a href="https://www.linkedin.com/in/carmen-ocalou/"><Icon src={linkedin}/></a>
+        <a href="https://github.com/Horoyoku"><Icon src={github}/></a>
+        <a href={cvDocument} target="_blank" rel="noopener noreferrer"> <Icon src={cv}/></a> 
       </Paragraph>  
     </Content>
   );

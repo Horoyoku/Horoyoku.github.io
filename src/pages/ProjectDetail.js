@@ -7,86 +7,19 @@ import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 
+import steam from "../img/steam.svg";
+import github from "../img/github.svg";
+
 import YoutubeEmbed from "../components/YoutubeEmbed";
+import "../css/ProjectDetail.css";
 
 const Details = styled(motion.div)`
   color: #4a1e2b;
 `;
 
-const Project = styled.div`
-  margin: auto;
-  width: 50%;
-  overflow: hidden;
-  padding: 3rem 0rem;
-
-  /* Kindel and iPad tablet  */
-  @media only screen and (min-width: 540px) and (max-width: 820px) {
-    padding: 3rem;
-    width: 100%;
-  }
-  @media only screen and (min-width: 320px) and (max-width: 539px) {
-    padding: 3rem;
-    padding-top: 30px;
-    width: 100%;
-  }
-
-`
-
-const Headline = styled.div`
-  margin: 0vh auto 5vh auto;
-  position: relative;
-  text-align: center;
-  h2 {
-    margin-bottom: 3rem;
-    font-weight: 300;
-    color: #000000
-  }
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-`;
-
-const MainImage = styled.div`
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: scale-down;
-    display: block;
-    margin: 0 auto;
-  }
-`;
-
-const ProjectBody = styled.div`
-  text-align: justify;
-  font-weight: 300;
-  h3 {
-    text-align: center;
-    margin: 0px auto;
-    font-size: 2rem;
-    font-weight: 300;
-  }
-  img {
-    width: auto;
-    max-height: 25rem;
-    display: block;
-    margin: 2rem auto;
-  }
-
-  /* Kindel and iPad tablet  */
-  @media only screen and (min-width: 540px) and (max-width: 820px) {
-    min-height: fit-content;
-    img {
-      min-height: 10vh;
-      height: 40vh;
-    }
-  }
-`;
-
 const ProjectDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  console.log(url);
   const [projects] = useState(ProjectState);
   const [project, setProject] = useState(null);
 
@@ -103,56 +36,85 @@ const ProjectDetail = () => {
       exit="exit"
     >
       {project ? (
-        <Project>
-          <Headline>
-            <h2>{project.title}</h2>
-            <MainImage>
-              <img src={project.mainImg} alt="project" />
-            </MainImage>
-          </Headline>
-          <ProjectBody>
-            <h3>About the project</h3>
-            {(() => {
-              if(project.description !== undefined)
-              {
-                return <p>{project.description}</p>
-              }
-            })()}
+        <div class = "project">
+          <div class = "project-body">
 
-            {(() => {
-              if(project.secondaryImg !== undefined){
-                return <img src={project.secondaryImg} alt="project" />
-              }
-            })()}
+            <div class = "project-media">
+              {(() => {
+                  if(project.video !== undefined){
+                    return <>
+                      <YoutubeEmbed embedId={project.video}/>
+                    </>
+                  }
+              })()}
+              <div class = "project-links">
+                {(() => {
+                    if(project.github !== undefined || project.steam !== undefined){
+                      return <>
+                      <p>More about</p>
+                      </> 
+                    }
+                })()}
 
-            {(() => {
-              if(project.context !== undefined){
-                return <p>{project.context}</p>
-              }
-            })()}
+                {(() => {
+                    if(project.github !== undefined){
+                      return <>
+                      <a href={project.github}><img class = "icon" src={github}/></a>
+                      </>
+                    }
+                })()}
 
-            {(() => {
-              if(project.video !== undefined){
-                return <>
-                  <YoutubeEmbed embedId={project.video}/>
-                </>
-              }
-            })()}
+                {(() => {
+                    if(project.steam !== undefined){
+                      return <>
+                        <a href={project.steam}><img class = "icon" src={steam}/></a>
+                      </>
+                    }
+                })()}
 
-            {(() => {
-              if(project.contributions !== undefined){
-                return <>
-                  <p>Some of the things I worked on for this project are:</p>
-                    <ul>
-                      { project.contributions.map((item) => {
-                        return <li>{item}</li>;
-                      }) }
-                    </ul>
-                </>
-              }
-            })()}
-          </ProjectBody>
-        </Project>
+              </div>
+             </div>
+            <div class = "project-info">
+              <h2>{project.title}</h2>
+
+              {(() => {
+                if(project.tags !== undefined){
+                  return <>
+                    { project.tags.map((item) => {
+                      return <span class = "tag">{item}</span>;
+                    }) }
+                  </>
+                }
+              })()}
+
+              {(() => {
+                if(project.description !== undefined)
+                {
+                  return <p>{project.description}</p>
+                }
+              })()}
+
+              {(() => {
+                if(project.context !== undefined){
+                  return <p>{project.context}</p>
+                }
+              })()}
+
+              {(() => {
+                if(project.contributions !== undefined){
+                  return <>
+                    <p>Some of my contributions are:</p>
+                      <ul>
+                        { project.contributions.map((item) => {
+                          return <li>{item}</li>;
+                        }) }
+                      </ul>
+                  </>
+                }
+              })()}
+            </div>
+          </div>
+        </div>
       ) : (
         <h3>Sorry, the project you are looking is not available</h3>
       )}

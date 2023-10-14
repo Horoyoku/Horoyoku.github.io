@@ -6,7 +6,8 @@ export const Layout = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 15rem;
+  padding: 80px 240px;
+  padding-bottom: 10px;
   color: white;
   /* iPad Pro tablet */
   @media only screen and (min-width: 821px) and (max-width: 1200px) {
@@ -35,6 +36,7 @@ export const Description = styled.div`
   p {
     color: #000000;
     font-size: 20px;
+    font-weight: 350;
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
@@ -65,10 +67,16 @@ export const ImageContainer = styled.div`
   flex: 1;
   z-index: 2;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   img {
+    
     width: 100%;
     object-fit: cover;
     border-radius: 100px 0px;
+    max-height: 766px;
+    max-width: 766px;
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {

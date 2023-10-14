@@ -37,6 +37,8 @@ const GlobalStyles = createGlobalStyle`
         font-size: 4rem;
     }
     h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
         color: #000000;
     }
     h4 {
@@ -59,14 +61,10 @@ const GlobalStyles = createGlobalStyle`
         border: none;
         text-decoration: none !important;
         &::after {
-            background-color: #ffffff;
             position: absolute;
             bottom: -4px;
             left: 0;
             content: "";
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease 0s;
             width: 100%;
             height: 2px;
         }

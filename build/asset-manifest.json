@@ -1,34 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3e89112.chunk.css",
-    "main.js": "/static/js/main.c5f649a7.chunk.js",
-    "main.js.map": "/static/js/main.c5f649a7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4e3e2f2d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4e3e2f2d.js.map",
+    "main.css": "/static/css/main.9bb8c7e6.chunk.css",
+    "main.js": "/static/js/main.381cf5c1.chunk.js",
+    "main.js.map": "/static/js/main.381cf5c1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9ae37ba3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9ae37ba3.js.map",
     "static/js/2.7465d2c7.chunk.js": "/static/js/2.7465d2c7.chunk.js",
     "static/js/2.7465d2c7.chunk.js.map": "/static/js/2.7465d2c7.chunk.js.map",
-    "static/js/3.737ef694.chunk.js": "/static/js/3.737ef694.chunk.js",
-    "static/js/3.737ef694.chunk.js.map": "/static/js/3.737ef694.chunk.js.map",
+    "static/js/3.4d200402.chunk.js": "/static/js/3.4d200402.chunk.js",
+    "static/js/3.4d200402.chunk.js.map": "/static/js/3.4d200402.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b3e89112.chunk.css.map": "/static/css/main.b3e89112.chunk.css.map",
+    "static/css/main.9bb8c7e6.chunk.css.map": "/static/css/main.9bb8c7e6.chunk.css.map",
     "static/js/2.7465d2c7.chunk.js.LICENSE.txt": "/static/js/2.7465d2c7.chunk.js.LICENSE.txt",
     "static/media/Bluey_11.4a005fa8.jpg": "/static/media/Bluey_11.4a005fa8.jpg",
     "static/media/background.f573f9fb.png": "/static/media/background.f573f9fb.png",
+    "static/media/cv.048ef1ff.svg": "/static/media/cv.048ef1ff.svg",
+    "static/media/cv.6660b502.pdf": "/static/media/cv.6660b502.pdf",
     "static/media/excaliroot.849ee10c.png": "/static/media/excaliroot.849ee10c.png",
     "static/media/excaliroot_11.49e81150.png": "/static/media/excaliroot_11.49e81150.png",
-    "static/media/gameboy-svgrepo-com.39f1ca79.svg": "/static/media/gameboy-svgrepo-com.39f1ca79.svg",
-    "static/media/home-1-svgrepo-com.e3b2298d.svg": "/static/media/home-1-svgrepo-com.e3b2298d.svg",
-    "static/media/linkedin.ada11cda.svg": "/static/media/linkedin.ada11cda.svg",
+    "static/media/gameboy.39f1ca79.svg": "/static/media/gameboy.39f1ca79.svg",
+    "static/media/github.6fa18895.svg": "/static/media/github.6fa18895.svg",
+    "static/media/home.e3b2298d.svg": "/static/media/home.e3b2298d.svg",
+    "static/media/linkedin.a312869e.svg": "/static/media/linkedin.a312869e.svg",
     "static/media/lunarpunk.a01eb56a.png": "/static/media/lunarpunk.a01eb56a.png",
     "static/media/lunarpunkLogo.e06bcc80.png": "/static/media/lunarpunkLogo.e06bcc80.png",
     "static/media/lunarpunk_11.b73d4b2f.png": "/static/media/lunarpunk_11.b73d4b2f.png",
     "static/media/photo.365f8b9b.jpg": "/static/media/photo.365f8b9b.jpg",
-    "static/media/user-id-svgrepo-com.d0eddb5c.svg": "/static/media/user-id-svgrepo-com.d0eddb5c.svg"
+    "static/media/steam.e715b67e.svg": "/static/media/steam.e715b67e.svg",
+    "static/media/user-id.d0eddb5c.svg": "/static/media/user-id.d0eddb5c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e3e2f2d.js",
+    "static/js/runtime-main.9ae37ba3.js",
     "static/js/2.7465d2c7.chunk.js",
-    "static/css/main.b3e89112.chunk.css",
-    "static/js/main.c5f649a7.chunk.js"
+    "static/css/main.9bb8c7e6.chunk.css",
+    "static/js/main.381cf5c1.chunk.js"
   ]
 }

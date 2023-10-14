@@ -22,8 +22,8 @@
 }
 
 .timeline-content {
-  -webkit-box-shadow: 5px 5px 10px #e0e0e0, -5px -5px 10px #e3e3e3;
-          box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #dedede;
+  -webkit-box-shadow: 3px 3px 4px #e0e0e0, -1px -1px 4px #e3e3e3;
+          box-shadow: 3px 3px 4px #e2e2e2, -1px -1px 4px #dedede;
   color: white;
   padding: 1.75rem;
   padding-left: 3rem;
@@ -33,6 +33,17 @@
   max-height: 250px;
   margin-bottom: 15px;
   border-radius: 6px;
+  text-align: left;
+
+  h3{
+    text-align: left;
+    font-weight: 450;
+  }
+
+  p{
+    text-align: left;
+    font-weight: 350;
+  }
 }
 
 .timeline-component {
@@ -43,6 +54,7 @@
   object-fit: cover;
   width: 100%;
   border-radius: 10px;
+  box-shadow: 3px 3px 20px #787979;
 }
 
 @media screen and (min-width: 768px) {
@@ -111,6 +123,4 @@
           color: #ffffff;
       }
   }
-
-
 }
