@@ -64,7 +64,7 @@ const OurWork = () => {
 
         <div class="timeline-component timeline-content">
           <h3>Lunarpunk</h3>
-          <p>Developed as Master's degree final project.</p>
+          <p>Developed as a Master's degree final project.</p>
           <Link className="non-styled-link" to="/project/lunarpunk">
             <button class="button-project">See more</button>
           </Link>
