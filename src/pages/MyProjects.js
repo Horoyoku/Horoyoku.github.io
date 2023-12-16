@@ -7,12 +7,8 @@ import excaliroot from "../img/excaliroot_11.png"
 import bluey from "../img/Bluey_11.jpg"
 // Animations
 import { motion } from "framer-motion";
-import {
-  photoAnimation,
-  fade,
-} from "../animation";
 
-import "../css/TimelineProjects.css";
+import styles from "../css/TimelineProjects.module.css";
 
 const Work = styled(motion.div)`
   overflow: hidden;
@@ -45,54 +41,55 @@ const OurWork = () => {
     exit="exit"
     >
 
-    <section class="design-section">
-      <div class="timeline">
+    <section class={styles.designSection}>
+      <div class={styles.timeline}>
 
-        <div class="timeline-component timeline-image">
+        <div class={styles.timelineComponent + " " + styles.timelineImage}>
           <img src={bluey} alt="Bluey"/>
         </div>
 
-        <div class="timeline-middle">
-            <div class="timeline-circle"></div>
+        <div class={styles.timelineMiddle}>
+            <div class={styles.timelineCircle}></div>
         </div>
         
-        <div class="timeline-component timeline-content">
+        <div class={styles.timelineComponent + " " + styles.timelineContent}>
           
           <h3>Bluey: The Videogame</h3>
           <p>Videogame based on the hit TV series.</p>
         </div>
 
-        <div class="timeline-component timeline-content">
+        <div class={styles.timelineComponent + " " + styles.timelineContent}>
           <h3>Lunarpunk</h3>
           <p>Developed as a Master's degree final project.</p>
-          <Link className="non-styled-link" to="/project/lunarpunk">
-            <button class="button-project">See more</button>
+          <Link style={{display: 'inline-block'}} to="/project/lunarpunk">
+            <button>See more</button>
           </Link>
         </div>
 
-        <div class="timeline-middle">
-            <div class="timeline-circle"></div>
+        <div class={styles.timelineMiddle}>
+            <div class={styles.timelineCircle}></div>
         </div>
 
-        <div class="timeline-component timeline-image">
+        <div class={styles.timelineComponent + " " + styles.timelineImage}>
         <img src={lunarpunk} alt="Lunarpunk"/>
         </div>
 
-        <div class="timeline-component timeline-image">
+        <div class={styles.timelineComponent + " " + styles.timelineImage}>
           <img src={excaliroot} alt="Excaliroot"/>
         </div>
 
-        <div class="timeline-middle">
-          <div class="timeline-circle"></div>
+        <div class={styles.timelineMiddle}>
+          <div class={styles.timelineCircle}></div>
         </div>
 
-        <div class="timeline-component timeline-content">
+        <div class={styles.timelineComponent + " " + styles.timelineContent}>
           <h3>Excaliroot</h3>
           <p>Developed for the Global Game Jam of 2023.</p>
-          <Link className="non-styled-link" to="/project/excaliroot">
-            <button class="button-project">See more</button>
+          <Link style={{display: 'inline-block'}} to="/project/excaliroot">
+            <button>See more</button>
           </Link>
         </div>
+        
       </div>
     </section>
 

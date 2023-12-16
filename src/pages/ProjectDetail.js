@@ -11,7 +11,7 @@ import steam from "../img/steam.svg";
 import github from "../img/github.svg";
 
 import YoutubeEmbed from "../components/YoutubeEmbed";
-import "../css/ProjectDetail.css";
+import styles from "../css/ProjectDetail.module.css";
 
 const Details = styled(motion.div)`
   color: #4a1e2b;
@@ -36,10 +36,10 @@ const ProjectDetail = () => {
       exit="exit"
     >
       {project ? (
-        <div class = "project">
-          <div class = "project-body">
+        <div class = {styles.project}>
+          <div class = {styles.projectBody}>
 
-            <div class = "project-media">
+            <div class = {styles.projectMedia}>
               {(() => {
                   if(project.video !== undefined){
                     return <>
@@ -47,11 +47,11 @@ const ProjectDetail = () => {
                     </>
                   }
               })()}
-              <div class = "project-links">
+              <div class = {styles.projectLinks}>
                 {(() => {
                     if(project.github !== undefined || project.steam !== undefined){
                       return <>
-                      <p>More about</p>
+                      <p>More about on</p>
                       </> 
                     }
                 })()}
@@ -59,7 +59,7 @@ const ProjectDetail = () => {
                 {(() => {
                     if(project.github !== undefined){
                       return <>
-                      <a href={project.github}><img class = "icon" src={github}/></a>
+                      <a href={project.github}><img class = {styles.icon} src={github}/></a>
                       </>
                     }
                 })()}
@@ -67,21 +67,21 @@ const ProjectDetail = () => {
                 {(() => {
                     if(project.steam !== undefined){
                       return <>
-                        <a href={project.steam}><img class = "icon" src={steam}/></a>
+                        <a href={project.steam}><img class = {styles.icon} src={steam}/></a>
                       </>
                     }
                 })()}
 
               </div>
              </div>
-            <div class = "project-info">
+            <div class = {styles.projectInfo}>
               <h2>{project.title}</h2>
 
               {(() => {
                 if(project.tags !== undefined){
                   return <>
                     { project.tags.map((item) => {
-                      return <span class = "tag">{item}</span>;
+                      return <span class = {styles.tag}>{item}</span>;
                     }) }
                   </>
                 }

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+.timelineExp {
+  height: 100%;
+  margin: auto;
+}
+
+.rbContainer {
+  width: 75%;
+  
+  display: block;
+  position: relative;
+}
+
+.rbContainer ul.rb {
+  margin: 2.5em 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rbContainer ul.rb li {
+  list-style: none;
+  margin: auto;
+  min-height: 50px;
+  border-left: 4px dashed #dbeddc;
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.rbContainer ul.rb li:last-child {
+  border-left: 4px dashed transparent;
+}
+
+.rbContainer ul.rb li::before {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid #dbeddc;
+  border-radius: 500%;
+  background: #65a268;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.rbContainer ul.rb li:hover::before {
+  border-color: #65a268;
+  transition: all 1000ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+  color: #000000;
+  position: relative;
+}
+
+.itemTitle {
+  color: #000000;
+}
+
+.job {
+  padding-bottom: 4px;
+  font-weight: 500;
+}
+
+.place {
+  font-size: 14px;
+}
+
+.period {
+  font-size: 14px;
+  font-weight:400;
+  color: #969595;
+}

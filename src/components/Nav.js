@@ -8,7 +8,7 @@ import { ReactComponent as Projects } from "../img/gameboy.svg"
 import { ReactComponent as AboutMe } from "../img/user-id.svg"
 
 const Navbar = styled.nav`
-  min-height: 5vh;
+  height: 10vh;
   display: flex;
   margin: auto;
   justify-content: center;

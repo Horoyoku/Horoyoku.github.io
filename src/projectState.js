@@ -13,6 +13,7 @@ export const ProjectState = () => {
       secondaryImg: lunarpunkSecondary,
       url: "/project/lunarpunk",
       steam: "https://store.steampowered.com/app/2378380/Lunarpunk/",
+      github: "https://github.com/Walking-Octopus-Games/LunarPunk",
       tags: ["Unreal Engine 4", "C++"],
       description: "Lunarpunk is a \"tower attack\" game, in which the player must use their turrets to advance towards their objective, destroying enemies along the way and the portals that summon them.",
       context: "This videogame is the final project for my master's degree in game development. I participated in collaboration with other programming colleagues and people from other masters (design, art, concept, sculpture, production and music/sound).",
@@ -30,7 +31,7 @@ export const ProjectState = () => {
       github: "https://github.com/CapyfunGames/Excaliroot/releases/tag/v1.0",
       tags: ["Unreal Engine 4", "C++"],
       description: "Excaliroot is a game in which the player embodies a capybara that wants to eliminate its enemies, the porcupines, who seek to dethrone the king of rodents (being the capybara the largest of rodents).",
-      context: "This project was developed during the Global Game Jam, at the computer science faculty of UCM. The team consisted of 5 programmers and a musician/artist.",
+      context: "This project was developed during the Global Game Jam of 2023, at the computer science faculty of the UCM. The team consisted of 5 programmers and a musician/artist.",
       video: "jEE66pUQhzg",
       contributions: [
         "The particle effect shown when the sword hits the ground.",

@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { Layout, Description, ImageContainer, Hide } from "../styles";
 // Animation
 import { motion } from "framer-motion";
-import { titleAnimation, fade, photoAnimation } from "../animation";
-import Wave from "./Wave";
-import '../css/Circles.css';
+import { fade, photoAnimation } from "../animation";
+
+import styles from '../css/Circles.module.css';
 
 const Header = styled.div`
   @media only screen and (min-width: 540px) and (max-width: 820px) {
@@ -48,7 +48,7 @@ const Introduction = () => {
           Game developer
         </p>
 
-        <Link className="non-styled-link" to="/projects">
+        <Link style={{display: 'inline-block'}} to="/projects">
           <button variants={fade}>My Projects</button>
         </Link>
       </Description>
@@ -63,8 +63,8 @@ const Introduction = () => {
       </ImageContainer>
     </Layout>
 
-    <div class="area" >
-    <ul class="circles">
+    <div class={styles.area} >
+    <ul class={styles.circles}>
             <li></li>
             <li></li>
             <li></li>

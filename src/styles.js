@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Layout = styled(motion.div)`
-  height: 50%;
   display: flex;
+  height: 90vh;
+  width: 70%;
+  margin: auto;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 240px;
   padding-bottom: 10px;
   color: white;
   /* iPad Pro tablet */
@@ -28,7 +29,7 @@ export const Layout = styled(motion.div)`
 `;
 export const Description = styled.div`
   flex: 1;
-  padding-right: 5rem;
+  padding: 0rem 5rem;
   h2 {
     font-weight: lighter;
     color: #000000;
@@ -71,12 +72,11 @@ export const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   img {
-    
-    width: 100%;
+    width: 75%;
     object-fit: cover;
-    border-radius: 100px 0px;
-    max-height: 766px;
-    max-width: 766px;
+    border-radius: 20% 0%;
+    max-height: 450px;
+    max-width: 450px;
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {

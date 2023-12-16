@@ -17,7 +17,7 @@
   }
 }
 
-.project-body {
+.projectBody {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -29,7 +29,7 @@
   }
 }
 
-.project-media {
+.projectMedia {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -41,7 +41,7 @@
   width: auto;
 }
 
-.project-links {
+.projectLinks {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -61,7 +61,7 @@
 }
 
 
-.project-info{
+.projectInfo{
   width: 30%;
   text-align: justify;
   font-weight: 300;
