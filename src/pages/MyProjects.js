@@ -42,7 +42,7 @@ const OurWork = () => {
     >
 
     <section class={styles.designSection}>
-      <div class={styles.timeline}>
+      <div class={styles.timelineProject}>
 
         <div class={styles.timelineComponent + " " + styles.timelineImage}>
           <img src={bluey} alt="Bluey"/>
@@ -53,10 +53,13 @@ const OurWork = () => {
         </div>
         
         <div class={styles.timelineComponent + " " + styles.timelineContent}>
-          
           <h3>Bluey: The Videogame</h3>
           <p>Videogame based on the hit TV series.</p>
         </div>
+
+      </div>
+
+      <div class={styles.timelineProject}>
 
         <div class={styles.timelineComponent + " " + styles.timelineContent}>
           <h3>Lunarpunk</h3>
@@ -74,6 +77,10 @@ const OurWork = () => {
         <img src={lunarpunk} alt="Lunarpunk"/>
         </div>
 
+      </div>
+
+      <div class={styles.timelineProject}>
+
         <div class={styles.timelineComponent + " " + styles.timelineImage}>
           <img src={excaliroot} alt="Excaliroot"/>
         </div>
@@ -89,8 +96,9 @@ const OurWork = () => {
             <button>See more</button>
           </Link>
         </div>
-        
+
       </div>
+        
     </section>
 
     </Work>

@@ -1,4 +1,4 @@
-.design-section {
+.designSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,8 @@
   justify-content: center;
 }
 
-.timeline {
+
+.timelineProject {
   width: 80%;
   height: auto;
   max-width: 1000px;
@@ -21,6 +22,14 @@
   align-items: center;
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     width: 100%;
+  }
+}
+
+.designSection .timelineProject:nth-child(even){
+  @media screen and (max-width: 768px){
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -49,6 +58,8 @@
   }
 }
 
+
+
 .timelineComponent {
   margin: 0px 20px 20px 20px;
 }
@@ -61,7 +72,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .timeline {
+  .timelineProject {
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
   }
