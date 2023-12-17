@@ -20,8 +20,10 @@ export const Layout = styled(motion.div)`
     flex-direction: column;
   }
   /* Mobile devices iPhone, Pixel */
-  @media only screen and (min-width: 320px) and (max-width: 539px) {
+  @media only screen and (max-width: 539px) {
+    height: 100%;
     padding: 1rem;
+    padding-top: 1.5rem;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -51,7 +53,7 @@ export const Description = styled.div`
     }
   }
   /* Mobile devices iPhone, Pixel */
-  @media only screen and (min-width: 320px) and (max-width: 539px) {
+  @media only screen and (max-width: 539px) {
     padding: 0;
     h2 {
       font-size: 2.5rem;
@@ -88,11 +90,11 @@ export const ImageContainer = styled.div`
     }
   }
   /* Mobile devices iPhone, Pixel */
-  @media only screen and (min-width: 320px) and (max-width: 539px) {
+  @media only screen and (max-width: 539px) {
     margin-bottom: 1rem;
     img {
       margin-top: 1.6rem;
-      height: 30em;
+      height: 24em;
       width: 100%;
       object-fit: cover;
     }

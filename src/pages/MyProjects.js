@@ -24,7 +24,7 @@ const Work = styled(motion.div)`
   }
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
-    padding: 0rem 0rem;
+    padding: 2.5rem 1rem;
     h2 {
       font-size: 3rem;
       text-align: center;

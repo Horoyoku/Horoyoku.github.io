@@ -19,6 +19,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    width: 100%;
+  }
 }
 
 .timelineContent {

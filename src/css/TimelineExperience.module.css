@@ -16,6 +16,10 @@
   margin: 2.5em 0;
   padding: 0;
   display: inline-block;
+
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    margin-left: 2.5rem;
+  }
 }
 
 .rbContainer ul.rb li {
@@ -29,6 +33,7 @@
 
 .rbContainer ul.rb li:last-child {
   border-left: 4px dashed transparent;
+  padding: 0 0 10px 30px;
 }
 
 .rbContainer ul.rb li::before {

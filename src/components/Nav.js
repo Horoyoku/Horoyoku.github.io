@@ -102,11 +102,12 @@ const NavbarMobile = styled.div`
     display: flex;
     overflow: hidden;
     position: fixed;
-    bottom: 0;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     background-image: url(${background});
+
+    position:sticky;
     
     padding: 20px;
     z-index: 3;
@@ -186,17 +187,17 @@ const Nav = () => {
           <ul>
             <li>
               <NavLink className="styled-link" to="/" exact>
-              <Home stroke="#24B3A8"/>
+              <Home stroke="#65a268"/>
               </NavLink>
             </li>
             <li>
               <NavLink className="styled-link" to="/projects">
-              <Projects stroke="#24B3A8" current="#24B3A8"/>
+              <Projects stroke="#65a268" current="#65a268"/>
               </NavLink>
             </li>
             <li>
               <NavLink className="styled-link" to="/AboutMe">
-              <AboutMe stroke="#24B3A8"/>
+              <AboutMe stroke="#65a268"/>
               </NavLink>
             </li>
           </ul>

@@ -15,8 +15,9 @@ import styles from "../css/TimelineExperience.module.css";
 const Content = styled(motion.div)`
   margin: auto;
   width: 50%;
-  padding: 5rem 0rem;
+  padding: 5rem;
   padding-bottom: 1rem;
+  height: 90vh;
 
   font-weight: 300;
 
@@ -38,6 +39,9 @@ const Content = styled(motion.div)`
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     padding: 2.5rem 1rem;
+    flex-direction: column-reverse;
+
+    height: 100%;
     width: 100%;
     h2 {
       font-size: 3rem;
@@ -48,7 +52,6 @@ const Content = styled(motion.div)`
 const Paragraph = styled.div`  
 flex: 1;
 text-align: justify;
-margin-bottom: 1rem;
 h2 {
   font-weight: lighter;
   color: #000000;
@@ -121,6 +124,11 @@ const Links = styled.div`
 
   p {
     font-weight: 350;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 }
 `;
