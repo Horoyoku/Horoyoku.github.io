@@ -8,6 +8,22 @@ import excalirootMain from "./img/excaliroot.png"
 export const ProjectState = () => {
   return [
     {
+      title: "Bluey",
+      mainImg: lunarpunkMain,
+      secondaryImg: lunarpunkSecondary,
+      url: "/project/bluey",
+      steam: "https://store.steampowered.com/app/2078350/Bluey_El_Videojuego/",
+      tags: ["Unity", "C#"],
+      description: "Bluey: The Videogame is a videogame based on the hit TV series. The game allows players to control different members of the family while playing four new episodes and different minigames.",
+      context: "I participated in the development of Bluey while working at Artax Games. The game is available for the following platforms: Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X and Series S, and Steam.",
+      video: "05ST8IN0M9o",
+      contributions: [
+        "Helping in the implementation of game mechanics and interfaces.",
+        "The implementation of the music in the game.",
+        "Bug fixing."
+      ]
+    },
+    {
       title: "Lunarpunk",
       mainImg: lunarpunkMain,
       secondaryImg: lunarpunkSecondary,

@@ -55,6 +55,9 @@ const OurWork = () => {
         <div class={styles.timelineComponent + " " + styles.timelineContent}>
           <h3>Bluey: The Videogame</h3>
           <p>Videogame based on the hit TV series.</p>
+          <Link style={{display: 'inline-block'}} to="/project/bluey">
+            <button>See more</button>
+          </Link>
         </div>
 
       </div>
