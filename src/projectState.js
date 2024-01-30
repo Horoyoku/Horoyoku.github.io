@@ -8,7 +8,7 @@ import excalirootMain from "./img/excaliroot.png"
 export const ProjectState = () => {
   return [
     {
-      title: "Bluey",
+      title: "Bluey: The Videogame",
       mainImg: lunarpunkMain,
       secondaryImg: lunarpunkSecondary,
       url: "/project/bluey",

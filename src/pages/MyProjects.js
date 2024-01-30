@@ -82,6 +82,7 @@ const OurWork = () => {
 
       </div>
 
+  {/*
       <div class={styles.timelineProject}>
 
         <div class={styles.timelineComponent + " " + styles.timelineImage}>
@@ -101,6 +102,7 @@ const OurWork = () => {
         </div>
 
       </div>
+  */}
         
     </section>
 
